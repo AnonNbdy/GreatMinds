@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https:fonts.googleapis.con/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*NAV BAR*/
+
+*{
+  margin: 0;
+  padding:0;
+  outline:none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background: lightgray;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.4s linear;
+  box-shadow: 0px 20px 35px darkgray;
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+
+.logo img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+
+.logo span{
+  font-weight: bold;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  color: black;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.bx{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.navicon{
+  position: relative;
+  top: 0px;
+  margin-left: 10px;
+  font-size: large;
+}
+
+a:hover{
+  background: rgb(177, 172, 172);
+}
+
+  nav:hover{
+    left: 0;
+    width: 280px;
+    transition: all 0.5s ease;
+  }
+
+/*APPLICATION FORM*/
+body {
+  margin: 0;
+  width:100%;
+  padding: 0;
+  align-items: center;
+}
+
+h1 {
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 59%;
+}
+input {
+  margin-top: 20px;
+}
+
+input[type='integer'],
+input[type='text'],
+input[type='int'],
+input[type='email'],
+textarea{
+width: 100%;
+position: static;
+left: 59%;
+padding: 5px 0 5px 6px;
+border-radius: 3px;
+border: 1px solid #ccc;
+display: block;
+margin-top: 2px;
+margin-bottom: 2px;
+}
+
+input[type='integer']:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus{
+border: 1px solid #2090c1;
+box-shadow: 0 0 10px #b9eaff;
+outline: none !important;
+}
+
+
+textarea{
+width: 100%;
+padding: 5px 0 5px 6px;
+border-radius: 3px;
+border: 1px solid #ccc;
+margin-top: 20px;
+margin-bottom: 2px;
+resize: none;
+
+}
+
+input[type='submit']
+{
+position: static;
+width: 50%;
+margin-left: 54%;
+background: rgb(0, 0, 0);
+font-size: large;
+align-items: center;
+color: #fff;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.main-application-form{
+max-width: 59%;
+margin-left: 90px;
+margin-top: 80px;
+padding: 20px 45px 20px 25px;
+}
+
+    </style>
+    <meta name="UTF-8" />
+    <title>Application page</title>
+    <!--Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="logo">
+            <img src="https://ghstudents.com/wp-content/uploads/2022/12/dut.png">
+            <span class="navicon">EduMatch</span>
+          </a>
+        </li>
+        <li><a href="#">
+          <i class='bx bx-left-arrow-circle'></i>
+          <span class="navicon">Return</span>
+        </a></li>
+        <li><a href="#">
+          <i class='bx bxs-user-circle' ></i>
+          <span class="navicon">Profile</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <!--APPLICATION FORM-->
+    <div class="main-application-form">
+      <div>
+      </div>
+      <form action="#" method="POST" enctype="multipart/form-data">
+
+        <h1>Application form</h1>
+
+      <label for="studnum">Student Number</label>
+      <input type="number" id="studnum" class="stu_num" minlength="8" maxlength="8" placeholder="Enter Student Number" required>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" class="name" placeholder="Enter Name" required>
+
+      <label for="surn">Surname</label>
+      <input type="text" id="surn" class="surname" placeholder="Enter Surname" required>
+
+      <label for="id">ID Number</label>
+      <input type="number" id="id" class="id" minlength="13" maxlength="13" placeholder="Enter ID Number" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" class="email" placeholder="Enter Email Address" required>
+
+      <label for="course">Course</label>
+      <input type="text" id="course" class="course" placeholder="Enter Course" required>
+
+      <label for="acaund">Academic Background</label>
+      <textarea class="academic" id="acaund" placeholder="Please tell us details of academic background including institutions attended, degrees earned, majors or fields of study, and relevant academic achievements." rows="5" required></textarea>
+
+      <label for="exp">Experience</label>
+      <textarea class="exp" id="exp" placeholder="Please provide a detailed description of your relevant work experience, including job titles, responsibilities, and accomplishments." rows="5" required></textarea>
+
+      <label for="skills">Skills</label>
+      <textarea class="skills" id="skills" placeholder="Please provide specific examples of how you have utilized your skills in previous roles or projects." rows="5" required></textarea>
+
+      <!--DOCUMENT SUBMISSION-->
+      <label for="file">Documents</label><br>
+      <input type="file" name="file" class="file" id="file" required><br>
+      <input type="file" name="file" class="file" required><br>
+      <input type="file" name="file" class="file" required><br>
+      <small>Upload necessary documents here.</small><br><br>
+
+      <!--APPLY BUTTON-->
+      <input name="submit" type="submit" value="Apply">
+      </form>
+      </div>
+  </body>
+</html>

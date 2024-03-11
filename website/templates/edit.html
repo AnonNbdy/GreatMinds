@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card card-body">
+            <form action="{{ url_for('edit', id=data.id) }}" method="POST">
+                <label for="title">Student</label>
+                <input id="title" name="students" required type="text" value="{{ data.student }}">
+
+                <label for="hours">Hourly Rate</label>
+                <input id="hours" name="hours" required type="text" value="{{ data.hourly_rate }}">
+
+                <button type="submit">Save</button>
+            </form>
+
+            <a class="back-button" href="/">Return </a></div>
+    </div>
+</div>
+
+{% endblock %}

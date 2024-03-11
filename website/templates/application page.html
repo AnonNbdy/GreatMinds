@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="UTF-8"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link  href="Styling/style.css" rel="stylesheet">
+    <title>Application page</title>
+    <!--Boxicons-->
+
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li>
+            <a class="logo" href="#">
+                <img src="https://ghstudents.com/wp-content/uploads/2022/12/dut.png">
+                <span class="navicon">EduMatch</span>
+            </a>
+        </li>
+        <li><a href="#">
+            <i class='bx bx-left-arrow-circle'></i>
+            <span class="navicon">Return</span>
+        </a></li>
+        <li><a href="#">
+            <i class='bx bxs-user-circle'></i>
+            <span class="navicon">Profile</span>
+        </a></li>
+    </ul>
+</nav>
+
+<!--APPLICATION FORM-->
+<div class="main-application-form">
+    <div>
+    </div>
+    <form action="#" enctype="multipart/form-data" method="POST">
+
+        <h1>Application form</h1>
+
+        <label for="student number">Student Number</label>
+        <input class="stu_num" id="student number" maxlength="8" minlength="8" placeholder="Enter Student Number"
+               required type="number">
+
+        <label for="name">Name</label>
+        <input class="name" id="name" placeholder="Enter Name" required type="text">
+
+        <label for="surn">Surname</label>
+        <input class="surname" id="surn" placeholder="Enter Surname" required type="text">
+
+        <label for="id">ID Number</label>
+        <input class="id" id="id" maxlength="13" minlength="13" placeholder="Enter ID Number" required type="number">
+
+        <label for="email">Email</label>
+        <input class="email" id="email" placeholder="Enter Email Address" required type="email">
+
+        <label for="course">Course</label>
+        <input class="course" id="course" placeholder="Enter Course" required type="text">
+
+        <label for="academyback">Academic Background</label>
+        <textarea class="academic" id="academyback"
+                  placeholder="Please tell us details of academic background including institutions attended, degrees earned, majors or fields of study, and relevant academic achievements."
+                  required rows="5"></textarea>
+
+        <label for="exp">Experience</label>
+        <textarea class="exp" id="exp"
+                  placeholder="Please provide a detailed description of your relevant work experience, including job titles, responsibilities, and accomplishments."
+                  required rows="5"></textarea>
+
+        <label for="skills">Skills</label>
+        <textarea class="skills" id="skills"
+                  placeholder="Please provide specific examples of how you have utilized your skills in previous roles or projects."
+                  required rows="5"></textarea>
+
+        <!--DOCUMENT SUBMISSION-->
+        <label for="file">Documents</label><br>
+        <input class="file" id="file" name="file" required type="file"><br>
+        <input class="file" name="file" required type="file"><br>
+        <input class="file" name="file" required type="file"><br>
+        <small>Upload necessary documents here.</small><br><br>
+
+        <!--APPLY BUTTON-->
+        <input name="submit" type="submit" value="Apply">
+    </form>
+
+</div>
+</body>
+</html>
